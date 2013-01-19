@@ -1,0 +1,28 @@
+{ 
+	"name" : "zazloptimizer",
+	"version" : "0.5.3",
+	"author" : "Richard Backhouse <richardabackhouse@gmail.com>",
+	"main" : "./lib/zazloptimizer.js",
+	"dependencies" : {
+		"connect" : ">= 2.0.0",
+		"uglify-js" : "1.2.5",
+		"esprima" : ">= 1.0.0"
+	},
+	"license" : "Dojo",
+	"scripts" : {
+		"start" : "node ./jsbin/zazlconnect.js"
+	},
+	"config" : {
+		"port" : 8080,
+		"compress" : true,
+		"appdir" : "./"
+	},
+	"bin" : {
+		"zazlconnect" : "./jsbin/zazlconnect.js"
+	},
+	"engine": {
+    	"node": ">=0.8"
+	},
+    "readme": "",
+    "readmeFilename": "README.md"
+}
