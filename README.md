@@ -38,5 +38,5 @@ There are some samples available in the **examples.zip** that use direct injecti
 Project Integration
 -------------------
 
-To see how to integrate the Node.js version of the optimizer into you connect based applicatuon take a look at [mpdjs](https://github.com/rbackhouse/mpdjs)
+To see how to integrate the Node.js version of the optimizer into you connect based application take a look at [mpdjs](https://github.com/rbackhouse/mpdjs)
     
