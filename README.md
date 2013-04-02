@@ -1,15 +1,12 @@
-zazloptimizer
-=============
+## zazloptimizer
 
 Node.js version of the Zazl Optimizer (http://zazl.org)
 
-Install it via npm
-------------------
+## Install it via npm
 
 	npm install zazloptimizer
 
-Usage
------
+## Usage
 
 To try it out you can download the available [examples](http://www.zazl.org/downloads/latest/examples.zip), create an examples directory and unzip it into that. 
 
@@ -35,8 +32,7 @@ There are some samples available in the **examples.zip** that use direct injecti
         
     http://localhost:8080/inject_amdlazyload.html
     
-Project Integration
--------------------
+## Project Integration
 
 To see how to integrate the Node.js version of the optimizer into you connect based application take a look at [mpdjs](https://github.com/rbackhouse/mpdjs)
     
