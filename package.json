@@ -1,6 +1,6 @@
 { 
 	"name" : "zazloptimizer",
-	"version" : "1.0.5",
+	"version" : "1.0.6",
 	"author" : "Richard Backhouse <richardabackhouse@gmail.com>",
 	"main" : "./lib/zazloptimizer.js",
 	"dependencies" : {
