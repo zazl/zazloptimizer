@@ -335,6 +335,9 @@ var define;
 				cb();
 			}
 		};
+		script.onerror = function(err) {
+			fireScriptLoadFailEvent(url);
+		};
 		script.onreadystatechange = function(){
 			if (("loaded" === script.readyState || "complete" === script.readyState) && !script.onloadDone) {
 				script.onload();
@@ -348,7 +351,11 @@ var define;
 		if (window.dojoConfig && window.dojoConfig.locale) {
 			locale = dojoConfig.locale;
 		}
-		var configString = JSON.stringify(_clone(cfg));
+		var clonedCfg = _clone(cfg);
+		if (clonedCfg.config) {
+			clonedCfg.config = undefined;
+		}
+		var configString = JSON.stringify(clonedCfg);
 		var zazlUrl = cfg.injectUrl+"?modules=";
 		for (var i = 0; i < modules.length; i++) {
 			zazlUrl += modules[i];
@@ -911,6 +918,15 @@ var define;
 			var zazlIdleEvt = document.createEvent('Event');
 			zazlIdleEvt.initEvent('zazlIdle', true, true);
 			window.dispatchEvent(zazlIdleEvt);
+		}
+	}
+
+	function fireScriptLoadFailEvent(url) {
+		if (window.addEventListener) {
+			var event = document.createEvent('Event');
+			event.initEvent('zazlScriptLoadFailed', true, true);
+			event.url = url;
+			window.dispatchEvent(event);
 		}
 	}
 }());
