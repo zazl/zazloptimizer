@@ -22,7 +22,7 @@ Both of these are also hosted as Heroku apps
 
 [JQuery Samples App] (http://zazl-jquery-samples.herokuapp.com/)
 
-Note: The hosting site (Heroku) puts both apps to sleep after being idle for 1hour. Don't be surprised if the first load(s) takes some time. 
+**Note:** The hosting site (Heroku) puts both apps to sleep after being idle for 1hour. Don't be surprised if the first load(s) takes some time. 
 Subsequent loads will demonstrate the full potential.
 
 Alternatively you can download the standalone dojo samples [examples](http://www.zazl.org/downloads/latest/examples.zip), create an examples directory and unzip it into that. 
