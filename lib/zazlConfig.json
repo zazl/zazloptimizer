@@ -4,7 +4,7 @@
 	"amdconfig" : {
         "plugins" : {
         	"dojo/has" : {
-        		"proxy": "optimizer/amd/plugins/dojo/has",
+        		"proxy": "./optimizer/amd/plugins/dojo/has",
 				"has" : {
 					"host-browser" : 1,
 					"dom" : 1,
@@ -13,14 +13,14 @@
 				}
         	},
         	"dojo/text" : {
-        		"proxy": "optimizer/amd/plugins/dojo/text"
+        		"proxy": "./optimizer/amd/plugins/dojo/text"
         	},
         	"dojo/selector/_loader" : {
-        		"proxy": "optimizer/amd/plugins/dojo/selector/_loader", 
+        		"proxy": "./optimizer/amd/plugins/dojo/selector/_loader", 
         		"defval": "dojo/selector/lite"
         	},
         	"dojox/gfx/renderer" : {
-        		"proxy": "optimizer/amd/plugins/dojox/gfx/renderer", 
+        		"proxy": "./optimizer/amd/plugins/dojox/gfx/renderer", 
         		"defval": "dojox/gfx/svg"
         	}
         },
