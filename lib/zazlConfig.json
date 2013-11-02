@@ -25,7 +25,8 @@
         	}
         },
 		"i18nPluginId" : "dojo/i18n",
-		"astparser": "esprima"
+		"astparser": "esprima",
+		"checkTimestamps": true
     },
 	"type" : "amd",
 	"astCache" : false
